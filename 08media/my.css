@@ -1,0 +1,318 @@
+/* prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+
+
+body {
+    font-family: 'roboto';
+    Font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+/*my color scheme 
+
+#F06B22
+#EEA180
+#FAD4BD
+#53579C
+#1C246C 
+*/
+
+/*header stuff here*/
+header {
+    background-color: #FAD4BD;
+    padding: 1rem 2%;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 2vw;
+}
+
+header h1 {
+    margin: 0;
+    color: #1C246C;
+    font-weight: 700;
+}
+header p {
+    margin: 0;
+    color: #F06B22;
+    letter-spacing: .5px;
+}
+
+/* small screens */ 
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #1C246C;
+        color: #F06B22;
+    }
+    
+  
+}
+
+
+
+/*big screens*/
+@media only screen and (min-width: 601px){ 
+  nav {
+    background-color: #FAD4BD;
+}
+nav ul {
+    list-style-type: none;  
+   padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+   font-size: 1.1rem;
+    text-decoration: none;
+    color: #F06B22;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem
+}
+nav li.active a {
+    background-color: #53579C;
+    color:#53579C;
+}
+nav a:hover {
+    color: #fff;  
+    
+}
+}
+
+
+/*end media query*/
+
+
+/* navigation */
+
+
+
+/* stuff for main*/
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color:#F06B22; 
+}
+main h2 {
+    color:#53579C;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #1C246C;
+     margin: 0 0 .3rem 0;
+}
+main ol {
+     padding: .5rem 3vw;
+    background-color: #FAD4BD;
+}
+main dl dt {
+    color: #1C246C;
+    font-weight: 700;
+}
+main dl dd {
+  color: #1C246C;  
+    font-size: .9rem;
+}
+main ul {
+    list-style-type: circle;
+}
+main ul li{
+    line-height: 125%; 
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+main address {
+    font-style: normal;
+    background-color: #FAD4BD;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #53579C;
+     border-radius: 5px;
+}
+main a {
+    color: #1C246C;
+}
+main a:hover {
+    color: #F06B22;
+}
+
+/* gradient experiment*/
+
+.hero {
+  position: relative; 
+  display: inline-block; 
+}
+
+.hero::after {
+  content: ''; 
+  position: absolute; 
+  top: 50%; 
+  left: 0; 
+  width: 100%; 
+  height: 50%; 
+  background: linear-gradient(to top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%); 
+}
+
+.hero img {
+  display: block; 
+  width: 100%; 
+  opacity: 0.9; 
+}
+
+
+
+
+/*photo css stuff*/
+
+
+.hero {
+    width: 100%;
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure{
+    margin: .5rem 2% 0 0;
+}
+div.gallery figcaption {
+    text-align:center;
+    font-size: .8rem;
+    color: #1C246C;
+}
+.gallery img:hover {
+    box-shadow: 6px 6px 10px grey;
+}
+
+
+
+
+/*form css*/
+
+.form fieldset {
+    border: 1px solid #1C246C;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.form legend {
+    color:#1C246C;
+    font-size: .8rem;
+}
+
+.form label {
+    margin: .5rem;
+}
+
+.form label, .form select, .form [type=text], .form [type=tel], .form textarea, .form [type=email] {
+    display: block;
+}
+
+.form [type=text], .form [type=tel], .form select, .form textarea , .form [type=email] {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'roboto';
+    font-weight: 300;
+    
+}
+
+.form textarea {
+    height: 6rem;
+}
+
+.form :required {
+    background-color: #f7f7f7;
+}
+
+.form [type=submit] {
+    background-color: #53579C;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+table.hours {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.hours th {
+    background-color: #53579C;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+table.hours td {
+    color: #53579C;
+    padding: .4rem 2vw;
+}
+table.hours tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+table.hours tr:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+/*footer stuff*/
+footer{
+    background-color: #EEA180;
+    text-align: center;
+    color: #1C246C;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: #ffff;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+
+
+
+

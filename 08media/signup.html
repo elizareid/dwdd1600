@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="my.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Your Company">
+  <meta name="description" content="Welcome to Your Company - Providing Quality Products">
+  <title>Your Company - Home</title>
+</head>
+<body>
+
+<!--Start of Page Header-->
+    
+  
+      <header>
+    <img src="images/icon-2.png" alt="site logo" width="100" height="45">
+          <div>
+             <h1>The Gym Guru</h1> 
+          </div>  
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Workouts</a></li> 
+          <li><a href="signup.html">Sign up</a></li> 
+         <li><a href="images.html">Technique</a></li>
+          <li><a href="map.html">Map</a></li> 
+          <li><a href="watch.html">Watch</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+    <h1>Sign Up</h1>
+    <form method="get" class="form" action="thankyou.html">
+    
+        <fieldset>
+            <legend>Customer Information</legend>    
+         <label>First Name*<input type="text" name="fname" required></label>  
+        <label>Last Name*<input type="text" name="lname" required></label>
+         <label>Cell Number*<input type="tel" name="phone" required placeholder="123-456-7890"></label>   
+      <label>Email*<input type="email" name="email" id="email"  placeholder="example@gmail.com" required></label>
+            </fieldset>
+        
+        
+<fieldset>
+    <label for="gender">Gender:</label>
+    <select name="gender" id="gender">
+        <option value="none">Please Select</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+    </select>
+</fieldset>
+
+        <fieldset>
+            <legend>Age</legend>
+               <label> <input type="radio" name="age" value="18-30">18-30</label>
+                <label> <input type="radio" name="age" value="31-50">31-50</label>
+                <label> <input type="radio" name="age" value="51+">51+</label>
+            </fieldset>
+        
+        
+        <fieldset>
+    
+        <legend>What do you need?</legend>
+                <label><input type="checkbox" name="meal plan" value="chosen">Meal Plan</label>
+                <label><input type="checkbox" name="Exercise plan" value="chosen"> Exercise Plan</label>
+                <label><input type="checkbox" name="check in" value="chosen">Check in</label>
+                <label><input type="checkbox" name="coaching" value="chosen">Coaching</label>
+    
+    </fieldset>
+        
+     <label>Notes
+            <textarea name="notes"> </textarea>
+            </label>
+            
+            
+            
+        
+        <input type="submit" value="Sign Up">
+        </form>
+      
+    
+</main>
+
+  <footer>
+    <address>
+      <p>&copy; &bull; 2024 &bull; Eliza Reid <br> DWDD1600.</p>
+    </address>
+
+    <p><a href="mailto:info@yourcompany.com">Contact Us</a> | <a href="tel:+1234567890">Call Us</a></p>
+  </footer>
+
+</body>
+</html>
